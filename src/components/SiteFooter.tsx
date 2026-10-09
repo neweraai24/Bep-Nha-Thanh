@@ -23,7 +23,7 @@ export function SiteFooter() {
         </div>
         <Col title="Đặt món" items={[["Thực đơn bữa trưa", "/bua-trua"], ["Tất cả món", "/thuc-don"], ["Giỏ hàng", "/thanh-toan"]]} />
         <Col title="Bếp" items={[["Về Bếp", "/ve-bep"], ["Nguồn rau", "/ve-bep"], ["Tìm cửa hàng", "/lien-he#cua-hang"]]} />
-        <Col title="Hỗ trợ" items={[["Liên hệ", "/lien-he"]]} />
+        <Col title="Hỗ trợ" items={[["Câu hỏi thường gặp", "/hoi-dap"], ["Liên hệ", "/lien-he"]]} />
         <div className="flex flex-col gap-2.5 text-[15px]">
           <b className="label text-cai-non">Giờ mở cửa</b>
           <span>{STORE.hours}</span>

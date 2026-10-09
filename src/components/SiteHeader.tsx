@@ -17,9 +17,10 @@ const LEFT = [
 ] as const;
 const RIGHT = [
   ["Về Bếp", "/ve-bep"],
+  ["Hỏi đáp", "/hoi-dap"],
   ["Liên hệ", "/lien-he"],
 ] as const;
-const ALL = [["Bữa trưa", "/bua-trua"], ["Tất cả món", "/thuc-don"], ["Về Bếp", "/ve-bep"], ["Liên hệ", "/lien-he"], ["Giỏ hàng", "/thanh-toan"]] as const;
+const ALL = [["Bữa trưa", "/bua-trua"], ["Tất cả món", "/thuc-don"], ["Về Bếp", "/ve-bep"], ["Hỏi đáp", "/hoi-dap"], ["Liên hệ", "/lien-he"], ["Giỏ hàng", "/thanh-toan"]] as const;
 
 function NavLink({ href, children, active }: { href: string; children: React.ReactNode; active: boolean }) {
   return (
