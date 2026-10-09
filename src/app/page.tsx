@@ -62,7 +62,7 @@ export default function Home() {
           <p className="relative max-w-[440px] text-base leading-relaxed text-pretty md:text-lg">
             Bếp Nhà Thanh nấu gạo lứt lúc 6 giờ sáng, giao bowl tới bàn làm việc của bạn trước 12 giờ.
           </p>
-          <Button href="/thuc-don" size="lg" className="relative">
+          <Button href="/bua-trua" size="lg" className="relative">
             Đặt bowl hôm nay <ArrowRight size={20} />
           </Button>
         </div>

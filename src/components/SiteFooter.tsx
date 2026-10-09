@@ -21,7 +21,7 @@ export function SiteFooter() {
           <Image src="/logo/bnt-logo-lightink.png" alt="Bếp Nhà Thanh" width={260} height={72} className="h-[72px] w-auto self-start" />
           <span>Bếp: {STORE.address}</span>
         </div>
-        <Col title="Đặt món" items={[["Thực đơn", "/thuc-don"], ["Giỏ hàng", "/thanh-toan"]]} />
+        <Col title="Đặt món" items={[["Thực đơn bữa trưa", "/bua-trua"], ["Tất cả món", "/thuc-don"], ["Giỏ hàng", "/thanh-toan"]]} />
         <Col title="Bếp" items={[["Về Bếp", "/ve-bep"], ["Nguồn rau", "/ve-bep"], ["Tìm cửa hàng", "/lien-he#cua-hang"]]} />
         <Col title="Hỗ trợ" items={[["Liên hệ", "/lien-he"]]} />
         <div className="flex flex-col gap-2.5 text-[15px]">

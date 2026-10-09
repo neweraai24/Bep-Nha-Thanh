@@ -11,15 +11,15 @@ import { Button, QuantityStepper } from "./ui";
 import { cn } from "./cn";
 
 const LEFT = [
-  ["Thực đơn", "/thuc-don"],
-  ["Nhiều đạm", "/thuc-don?filter=protein"],
+  ["Bữa trưa", "/bua-trua"],
+  ["Tất cả món", "/thuc-don"],
   ["Thuần chay", "/thuc-don?filter=vegan"],
 ] as const;
 const RIGHT = [
   ["Về Bếp", "/ve-bep"],
   ["Liên hệ", "/lien-he"],
 ] as const;
-const ALL = [["Thực đơn", "/thuc-don"], ["Về Bếp", "/ve-bep"], ["Liên hệ", "/lien-he"], ["Giỏ hàng", "/thanh-toan"]] as const;
+const ALL = [["Bữa trưa", "/bua-trua"], ["Tất cả món", "/thuc-don"], ["Về Bếp", "/ve-bep"], ["Liên hệ", "/lien-he"], ["Giỏ hàng", "/thanh-toan"]] as const;
 
 function NavLink({ href, children, active }: { href: string; children: React.ReactNode; active: boolean }) {
   return (
@@ -129,7 +129,7 @@ export function SiteHeader() {
             </button>
             {mini && <MiniCart onClose={() => setMini(false)} />}
           </div>
-          <Button href="/thuc-don" variant="outline" size="sm" className="hidden md:inline-flex">Đặt món</Button>
+          <Button href="/bua-trua" variant="outline" size="sm" className="hidden md:inline-flex">Đặt món</Button>
         </div>
       </header>
 
@@ -148,7 +148,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="flex flex-col gap-3.5 pt-4">
-            <Button href="/thuc-don" size="lg" full>Đặt món</Button>
+            <Button href="/bua-trua" size="lg" full>Đặt món</Button>
             <a href={`tel:${STORE.tel}`} className="flex items-center justify-center gap-2 text-sm font-semibold"><Phone size={18} />{STORE.phone} · {STORE.hours}</a>
           </div>
         </aside>

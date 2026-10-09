@@ -83,3 +83,13 @@ export const SLOTS = ["11:00 – 11:30", "11:30 – 12:00", "12:00 – 12:30"];
 
 export const vnd = (n: number) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "đ";
 export const num = (n: number) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+/** Lịch món trưa mẫu theo thứ (0 = Thứ 2 … 4 = Thứ 6). Mỗi ngày 3 món, luôn có một món chay. Thay bằng lịch thật khi chốt. */
+export const LUNCH_SCHEDULE: string[][] = [
+  ["ga-quinoa", "ca-hoi-gao-lut", "dau-hu-rau-cu"],
+  ["bun-ga-nuong-sa", "ga-quinoa", "dau-hu-rau-cu"],
+  ["ca-hoi-gao-lut", "bun-ga-nuong-sa", "dau-hu-rau-cu"],
+  ["ga-quinoa", "bun-ga-nuong-sa", "dau-hu-rau-cu"],
+  ["ca-hoi-gao-lut", "ga-quinoa", "dau-hu-rau-cu"],
+];
+export const DAY_LABELS = ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"];
